@@ -1,0 +1,25 @@
+/* experiences page styleshet */
+
+dt {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+dd {
+	font-size: 1.2rem;
+	margin-bottom: 1em;
+}
+
+dd p {
+	margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 31.25rem) {
+	.content dl dd p,
+	.content p,
+	.content h1,
+	dd {
+		text-align: left;
+	}
+}

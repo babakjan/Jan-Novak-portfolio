@@ -1,0 +1,361 @@
+<!-- this is school project and person Jan Novak is fake -->
+<!DOCTYPE html>
+<html lang="cs">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="keywords"
+			content="Novák, webový vývojář, Java, techlead, fullstack, Springboot, Nodejs, React, SQL"
+		/>
+
+		<!-- styles -->
+		<link rel="stylesheet" href="style/common.css" />
+		<link rel="stylesheet" href="style/home.css" />
+		<link rel="stylesheet" href="style/print.css" />
+
+		<base href="https://bizwu.fit.cvut.cz/B202/babakjan-sem/" />
+
+		<title>Jan Novák</title>
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<!-- navigation -->
+			<nav class="navbar hide-navbar">
+				<div class="max-width">
+					<!-- home - first level -->
+					<a class="current-location" id="logo-home">Novák</a>
+
+					<!-- subpages - second level  -->
+					<ul class="hide-menu">
+						<li><a href="o-mne.html">O mně</a></li>
+						<li><a href="znalosti.html">Znalosti</a></li>
+						<li><a href="zkusenosti.html">Zkušenosti</a></li>
+						<li><a href="projekty.html">Projekty</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="./#kontakt" id="contact-in-nav">Kontakt</a></li>
+					</ul>
+					<!-- hamburger button - show when screnn is to small to fit regular navbar -->
+					<div id="hamburger-btn" />
+				</div>
+			</nav>
+
+			<!-- scroll up button -->
+			<div class="scroll-up-btn" />
+		</header>
+
+		<!-- content -->
+
+		<!-- landing screen -->
+		<div class="landing">
+			<div class="content max-width">
+				<!-- left column - text  -->
+				<div class="column-left">
+					<h1>Jan Novák</h1>
+					<div class="info-text">
+						full-stack webový vývojář, Java specialista, tech lead..
+					</div>
+					<a href="./#kontakt" class="button contact-button">Kontaktovat</a>
+				</div>
+				<!-- right column - image thinking programmer next to pc -->
+				<div class="column-right">
+					<img src="images/thiking-programmer.svg" alt="přemýšlející člověk u počítače" />
+				</div>
+			</div>
+		</div>
+
+		<!-- about me section-->
+		<section class="about">
+			<div class="max-width">
+				<h2>O mně</h2>
+				<div class="content">
+					<!-- left - column - image - profile pic -->
+					<img
+						src="images/about-me-photo.jpg"
+						class="column-left"
+						alt="profilové foto mé osoby"
+					/>
+					<!-- right column - text  -->
+					<div class="column-right">
+						<p>
+							Jmenuji se Jan Novák a jsem <strong>full-stack webový vývojář</strong> a
+							<strong> techlead</strong>. Pocházím z České republiky a aktuálně žiji v
+							Praze. Pracuji v
+							<a class="primary" href="https://www.kb.cz/cs/"> Komerční bance </a>
+							jako vedoucí vývojového týmu.
+						</p>
+						<p>
+							Ve světě IT se pohybuji již 10. rokem a za tu dobu jsem nabral spoustu
+							zkušeností. Specializuji se převážně na velké enterprise projekty. Mezi
+							moje nejoblíbenější a nevíce používané technologie patří jazyky Java a
+							Java script.
+						</p>
+						<a
+							class="continue-reading primary"
+							href="o-mne.html#moje-cesta-k-programovani"
+							>více o mně
+						</a>
+						<a class="button cv-button fake-link">Stáhnout CV</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- skills section -->
+		<section class="skills">
+			<div class="max-width">
+				<h2>Znalosti</h2>
+				<p>
+					Jakožto full-stack vývojář znám frontendové i backendové technologie. Z
+					backendových technologií rozumím hlavně Javě a Nodejs. Z frontendových
+					technologií znám HMTL, CSS, Javascript a React. Pracuji jako techlead, tedy mám
+					zkušenosti s vedením lidí. Líbí se mi vývoj v agilním prostředí. Nebojím se
+					řešit problémy. Hovořím anglicky na úrovni C1 a německy na úrovni B2.
+				</p>
+				<a href="znalosti.html" class="continue-reading darker">více o znalostech</a>
+
+				<!-- container of card of technologies icons  -->
+				<div class="skill-icons">
+					<!-- java -->
+					<a href="znalosti.html#java" class="card" id="java">
+						<img src="images/skills/java-logo-with-square.png" alt="Java logo" />
+					</a>
+
+					<!-- spring boot -->
+					<a href="znalosti.html#java" class="card" id="spring-boot">
+						<img
+							src="images/skills/springboot-logo-square.png"
+							alt="Spring boot logo"
+						/>
+					</a>
+
+					<!-- nodejs -->
+					<a href="znalosti.html#javascript" class="card" id="nodejs">
+						<img src="images/skills/nodejs-logo-square.png" alt="Nodejs logo" />
+					</a>
+
+					<!-- reactjs -->
+					<a href="znalosti.html#frontend" class="card" id="html5">
+						<img src="images/skills/html5-logo-square.png" alt="HTML logo" />
+					</a>
+
+					<!-- SQL -->
+					<a href="znalosti.html#database" class="card" id="sql">
+						<img src="images/skills/database-logo-square.png" alt="database log" />
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- experiences section -->
+		<section class="experiences">
+			<div class="max-width">
+				<h2>Zkušenosti</h2>
+				<div class="content">
+					<!-- left column - text  -->
+					<div class="column-left">
+						<p>
+							Mám vystudovanou Fakultu informačních technologií
+							<a href="https://fit.cvut.cz/cs">ČVUT</a>. Začínal jsem pracovat jako
+							frontend vývojář. Poté jsem se přesunul na backendové pozice. Aktuálně
+							pracuji jako techlead v
+							<a href="https://www.kb.cz/cs/">Komerční bance</a>. Zmiňuji se pouze o
+							pracovních pozicích, které souvisí s IT, protože ostatní jsou již
+							irelevantní.
+						</p>
+						<a href="zkusenosti.html">více o zkušenostech</a>
+					</div>
+					<!-- right column - image road (path) -->
+					<div class="column-right">
+						<img src="images/road.svg" alt="learning path" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- projects section -->
+		<section class="projects">
+			<div class="max-width">
+				<h2>Projekty</h2>
+				<div class="content">
+					<p>
+						Soustředím se na práci s daty. Vybral jsem několik veřejných projektů, na
+						kterých jsem pracoval. Většina projektů, na kterých pracuji bohužel podléhá
+						NDA a nemohu je zde prezentovat. Projekty, které zde sdílím jsou buď mé
+						vlastní a najdete je na <a class="underline">mém GitHubu</a> nebo se jedná o
+						opensourcové projekty, které mají vlastní GitHub repozitáře.
+					</p>
+					<a href="projekty.html">detaily o projektech</a>
+					<!-- container of projects cards  -->
+					<div class="projects-screen-shots">
+						<!-- vector model -->
+						<a href="vektorovy-model.html" title="přejít do projektu vektorový model">
+							<img
+								src="images/projects/vector-model.png"
+								alt="projekt vektorový model"
+							/>
+							<h3>Vektorový model</h3>
+							vyhledávací systém v HTMl stránkách
+						</a>
+						<!-- dolovani dat -->
+						<a href="dolovani-dat-z-webu.html" title="přejít k ptojektu dolování dat">
+							<img
+								src="images/projects/dolovani-dat.png"
+								alt="projekt dolování dat"
+							/>
+							<h3>Dolování dat</h3>
+							transformace dat z webu do různých formátů
+						</a>
+						<!-- spring boot -->
+						<a href="springboot.html" title="přejít k projektu spring-boot">
+							<img src="images/projects/spring-boot.png" alt="spring boot projekt" />
+							<h3>Springboot</h3>
+							Java framework pro tvorbu webových aplikací
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- blog section -->
+		<section class="blog">
+			<div class="max-width">
+				<h2>Blog</h2>
+				<div class="content">
+					<!-- left column - image - type writer -->
+					<img class="column-left" src="images/blog/type-writer.svg" alt="laptop" />
+					<!-- right column - text  -->
+					<div class="column-right">
+						<p>
+							Ve svém blogu se zabývám hlavně technologiemi. Rozepisuji se zde o
+							novinkách ze světa IT, ale i hardwaru. Blog obsahuje také návody a
+							doporučení, jak si díky technologiím usnadnit život. Můžete zde nalézt i
+							recenze na produkty, které mě zaujaly a to jak pozitivně, tak i
+							negativně. Budu rád, když
+							<a href="index.html#kontakt">mi&nbsp;napíšete</a> zpětnou vazbu, co se
+							vám líbí nebo vám nevyhovuje.
+						</p>
+						<a href="blog.html">články v blogu</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- contacts section -->
+		<section class="contact">
+			<div class="max-width">
+				<h2 id="kontakt">Kontakt</h2>
+				<div class="content">
+					<!-- contact form -->
+					<form
+						name="contact"
+						class="column-left"
+						action="https://submit-form.com/9gVeNpbC"
+						id="9gVeNpbC"
+					>
+						<div class="name-mail">
+							<!-- name -->
+							<input
+								type="text"
+								id="input-name"
+								name="name"
+								placeholder="jméno"
+							/>
+							<!-- e-mail -->
+							<input
+								type="email"
+								id="input-email"
+								name="email"
+								placeholder="e-mail*"
+								required
+							/>
+						</div>
+						<!-- subject -->
+						<input
+							type="text"
+							id="input-subject"
+							name="subject"
+							placeholder="předmět"
+						/>
+						<!-- textarea for message -->
+						<textarea
+							id="input-message"
+							name="message"
+							placeholder="zpráva*"
+							required
+						></textarea>
+
+						<div class="asterix-meaning">* značí povinná pole</div>
+
+						<!-- send button -->
+						<input
+							type="submit"
+							name="submit"
+							class="button"
+							value="Odeslat"
+							id="input-submit"
+						/>
+
+						<!-- hidden inputs for Formspark.io -->
+						<input
+							type="hidden"
+							name="_redirect"
+							value="https://bizwu.fit.cvut.cz/B202/babakjan-sem/formular-odeslan.html"
+						/>
+					</form>
+
+					<!-- social networks - acounts does not exist => fake links -->
+					<!-- https://fontawesome.com/license - icons -->
+					<ul class="column-right">
+						<!-- Linkedin -->
+						<li>
+							<a>
+								<img src="images/icons/linkedin.svg" alt="Linkedin logo" />
+								<span>Jan Novak</span>
+							</a>
+						</li>
+						<!-- GitHub -->
+						<li>
+							<a>
+								<img src="images/icons/github.svg" alt="GitHub logo" />
+								<span>jan_novak</span>
+							</a>
+						</li>
+						<!-- email -->
+						<li>
+							<a>
+								<img src="images/icons/email.svg" alt="email logo" />
+								<span>jan@novak.com</span></a
+							>
+						</li>
+						<!-- instagram -->
+						<li>
+							<a>
+								<img src="images/icons/instagram.svg" alt="Instagram logo" />
+								<span>novak_</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer -->
+		<footer>
+			<ul>
+				<li><a class="current-location">Novák</a></li>
+				<li><a href="o-mne.html">O mně</a></li>
+				<li><a href="znalosti.html">Znalosti</a></li>
+				<li><a href="zkusenosti.html">Zkušenosti</a></li>
+				<li><a href="projekty.html">Projekty</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="./#kontakt">Kontakt</a></li>
+			</ul>
+		</footer>
+
+		<!-- this script provide navbar shinking and scroll up btn functionalities -->
+		<script src="scripts/script.js"></script>
+	</body>
+</html>

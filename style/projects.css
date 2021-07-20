@@ -1,0 +1,77 @@
+/* projects page stylesheet */
+
+.content p,
+.content a {
+	line-height: 1.7rem;
+	font-size: 1.2rem;
+}
+
+.content > p,
+.content dd {
+	margin-bottom: 3rem;
+}
+
+.content dl dt {
+	font-size: 1.8rem;
+	font-weight: 600;
+	text-decoration: underline;
+	text-decoration-color: var(--primary-color);
+	margin-bottom: 1rem;
+}
+
+.content dd img {
+	border-radius: 1rem;
+	width: 31rem;
+}
+
+.content dl .flex {
+	display: flex;
+	align-items: flex-start;
+}
+
+.content dl dd .column {
+	padding-right: 3rem;
+}
+
+.content dl dd .right {
+	order: 2;
+	padding: 0 0 0 3rem;
+}
+
+.content dl .button {
+	color: var(--white);
+}
+
+.content dl .button:hover {
+	color: var(--primary-color);
+}
+
+@media screen and (max-width: 62.5rem) {
+	.content dl .flex {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.content dl dd .column,
+	.content dl dd .right {
+		width: 100%;
+		padding: 0 0 0 0;
+	}
+
+	.content dl dd img {
+		order: 2;
+		margin-top: 2rem;
+	}
+}
+
+@media screen and (max-width: 34.375rem) {
+	h1,
+	h2 {
+		text-align: center;
+	}
+
+	.content dl dd img {
+		width: 100%;
+	}
+}

@@ -1,0 +1,58 @@
+/* project detail and blog post pages stylesheet */
+
+.content {
+	text-align: left;
+	margin-bottom: 3rem;
+}
+
+.content .last-link {
+	font-size: 1.2rem;
+}
+
+.content img,
+.content iframe {
+	margin: 0 0 2rem 0;
+	max-width: 50rem;
+	display: block;
+}
+
+.content img {
+	width: 100%;
+	max-height: 30rem;
+	max-width: 50rem;
+	object-fit: cover;
+}
+
+.content #vector-model-thumbnail,
+.content #springboot-thumbnail {
+	margin: 0;
+}
+
+@media screen and (max-width: 43.75rem) {
+	.content iframe {
+		width: 30rem;
+	}
+}
+
+@media screen and (max-width: 37.5rem) {
+	.content iframe {
+		width: 26rem;
+	}
+}
+
+@media screen and (max-width: 31.25rem) {
+	.content iframe {
+		width: 20rem;
+	}
+}
+
+@media screen and (max-width: 25rem) {
+	.content iframe {
+		width: 15rem;
+	}
+}
+@media screen and (max-width: 18.75rem) {
+	.content iframe {
+		width: 10rem;
+	}
+}

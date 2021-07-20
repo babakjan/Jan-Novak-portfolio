@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="cs">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="keywords"
+			content="blog, články, recenze, marshall, acton, m1, linux, programátor, titul, tech"
+		/>
+
+		<!-- styles -->
+		<link rel="stylesheet" href="style/common.css" />
+		<link rel="stylesheet" href="style/headings-paragraphs.css" />
+		<link rel="stylesheet" href="style/blog.css" />
+		<link rel="stylesheet" href="style/print.css" />
+
+		<base href="https://bizwu.fit.cvut.cz/B202/babakjan-sem/" />
+
+		<title>Blog</title>
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<!-- navigation -->
+			<nav class="navbar hide-navbar">
+				<div class="max-width">
+					<!-- home - first level -->
+					<a href="./" id="logo-home">Novák</a>
+
+					<!-- subpages - second level  -->
+					<ul class="hide-menu">
+						<li><a href="o-mne.html">O mně</a></li>
+						<li><a href="znalosti.html">Znalosti</a></li>
+						<li><a href="zkusenosti.html">Zkušenosti</a></li>
+						<li><a href="projekty.html">Projekty</a></li>
+						<li><a class="current-location">Blog</a></li>
+						<li><a href="./#kontakt">Kontakt</a></li>
+					</ul>
+					<!-- hamburger button - show when screnn is to small to fit regular navbar -->
+					<div id="hamburger-btn" />
+				</div>
+			</nav>
+
+			<!-- breadcrumbs navigation -->
+			<div class="breadcrumbs">
+				<div class="max-width">
+					<a href="./">Novák</a>
+					> Blog
+				</div>
+			</div>
+
+			<!-- scroll up button -->
+			<div class="scroll-up-btn" />
+		</header>
+
+		<!-- content -->
+		<div class="content max-width">
+			<h1>Blog</h1>
+			<!-- sumary -->
+			<p>
+				Ve svém blogu se zabývám hlavně technologiemi. Rozepisuji se zde o novinkách ze
+				světa IT, ale i hardwaru. Blog obsahuje také návody a doporučení, jak si díky
+				technologiím usnadnit život. Můžete zde nalézt i recenze na produkty, které mě
+				zaujaly a to jak pozitivně, tak i negativně. Budu rád, když
+				<a href="index.html#kontakt">mi napíšete</a> zpětnou vazbu, co se vám líbí nebo vám
+				nevyhovuje.
+			</p>
+
+			<!-- sorting method of blog posts -->
+			<select name="blog-sorting" id="blog-sorting">
+				<option value="od-nejnovejsich">Od nejnovějších</option>
+				<option value="od-nejpopularnejsich">Od nejpopulárnějších</option>
+				<option value="od-nejstarsich">Od nestarších</option>
+			</select>
+
+			<!-- blog posts -->
+			<div id="blog-posts">
+				<!-- recenze Marshall Acton II -->
+				<div class="post">
+					<!-- right column - text -->
+					<div class="column-right">
+						<a href="marshall-acton-recenze.html" class="print-not-break">
+							<h2>Recenze Marshall Acton II</h2>
+						</a>
+						<p>
+							<strong>Marshall Acton II</strong> je nepřenosný reproduktor pro domácí
+							použití. Cena za tento reproduktor činí 5500Kč, ale ve výprodejích ho
+							lze sehnat o zhruba tisícovku levněji. Pojďme se podívat, zda kvalita
+							reproduktoru odpovídá jeho ceně.
+						</p>
+						Publikováno: 11. 1. 2021 Autor: Jan Novák
+					</div>
+
+					<!-- left column - thumbnail image -->
+					<a href="marshall-acton-recenze.html" class="block">
+						<img
+							src="images/blog/marshall-acton.jpg"
+							alt="obrázek reproduktoru Marshall Acton II"
+						/>
+					</a>
+				</div>
+
+				<!-- M1 chip -->
+				<div class="post">
+					<!-- right column - text -->
+					<div class="column-right">
+						<a href="m1-chip.html" class="print-not-break">
+							<h2>Co je M1 čip?</h2>
+						</a>
+						<p>
+							Tento týden společnost <strong>Apple</strong> představila nové
+							<strong>procesory M1</strong>. Jedná se o revoluci v počítačovém
+							průmyslu? V článku se dozvíte, kde se tento chip vzal a jaké přináší
+							novinky. Dále píši o jeho výhodách či nevýhodách oproti konkurenci.
+						</p>
+						Publikováno: 20. 11. 2020 Autor: Jan Novák
+					</div>
+
+					<!-- left column - thumbnail image  -->
+					<a href="m1-chip.html" class="block">
+						<img src="images/blog/m1-chip.png" alt="obrázek automobilu" />
+					</a>
+				</div>
+
+				<!-- programator skaterem -->
+				<div class="post">
+					<!-- right column - text -->
+					<div class="column-right">
+						<a href="programator-skaterem.html" class="print-not-break">
+							<h2>Programátor skaterem</h2>
+						</a>
+						<p>
+							Může být <stong>programátor skaterem</stong>? Poněkud podivná kombinace
+							že? Programátora si lidé představí, jako mírně asociálního člověka, co
+							neustále sedí za počítačem. Oproti tomu skejťáka, jako někoho, kdo se
+							jen poflakuje po venku s kamarády a nic nedělá. V článku se pokusím tyto
+							stereotypy vyvrátit.
+						</p>
+						Publikováno: 20. 9. 2019 Autor: Jan Novák
+					</div>
+
+					<!-- left column - thumbnail image -->
+					<a href="programator-skaterem.html" class="block">
+						<img src="images/blog/skater.jpg" alt="obrázek skateboardisty" />
+					</a>
+				</div>
+
+				<!-- moje zkušenosti s Linuxem -->
+				<div class="post">
+					<!-- right column text -->
+					<div class="column-right">
+						<a class="underline print-not-break">
+							<h>Moje zkušenosti s Linuxem</h>
+						</a>
+						<p>
+							Je systém <strong>Linux</strong> srovnatelný s Windows nebo Mac OS?
+							Linux používám již 2. rokem jako můj jediný OS. V článku se dozvíte, zda
+							je pro normálního člověka rovnocennou alternativou, jaké jsou jeho klady
+							či zápory.
+						</p>
+						Publikováno: 9. 6. 2019 Autor: Jan Novák
+					</div>
+
+					<!-- left column - thumbnail image -->
+					<a class="block">
+						<img
+							src="images/blog/linux-desktop.png"
+							alt="snímek obrazovky systému Linux"
+						/>
+					</a>
+				</div>
+
+				<div class="post">
+					<!-- right column - text -->
+					<div class="column-right">
+						<a class="underline print-not-break">
+							<h2>Potřebuje programátor titul?</h2>
+						</a>
+						<p>
+							V poslední době se často setkávám s názorem, že
+							<strong>programátoři nepotřebují titul</strong>. Říká se, že škola
+							člověka jen zdržuje a že kdyby šel pracovat, tak by získal zkušenosti,
+							které jsou cennější. Jak to vidím já, který prošel vysokou školou?
+						</p>
+						Publikováno: 3. 4. 2019 Autor: Jan Novák
+					</div>
+
+					<!-- left column - thumbnail image -->
+					<a class="block">
+						<img
+							src="images/blog/computer-science-degree.jpeg"
+							alt="obrázek vysokoškoláka"
+						/>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<footer>
+			<ul>
+				<li><a href="./">Novák</a></li>
+				<li><a href="o-mne.html">O mně</a></li>
+				<li><a href="znalosti.html">Znalosti</a></li>
+				<li><a href="zkusenosti.html">Zkušenosti</a></li>
+				<li><a href="projekty.html">Projekty</a></li>
+				<li><a class="current-location">Blog</a></li>
+				<li><a href="./#kontakt">Kontakt</a></li>
+			</ul>
+		</footer>
+
+		<script src="scripts/script.js"></script>
+	</body>
+</html>

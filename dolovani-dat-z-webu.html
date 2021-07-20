@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="cs">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" content="data, dolovani, xml" />
+
+		<!-- styles -->
+		<link rel="stylesheet" href="style/common.css" />
+		<link rel="stylesheet" href="style/headings-paragraphs.css" />
+		<link rel="stylesheet" href="style/project-details-blog-posts.css" />
+		<link rel="stylesheet" href="style/print.css" />
+
+		<base href="https://bizwu.fit.cvut.cz/B202/babakjan-sem/" />
+
+		<title>Dolování dat z webu</title>
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<!-- navigation -->
+			<nav class="navbar hide-navbar">
+				<div class="max-width">
+					<!-- home - first level -->
+					<a href="./" id="logo-home">Novák</a>
+
+					<!-- subpages - second level  -->
+					<ul class="hide-menu">
+						<li><a href="o-mne.html">O mně</a></li>
+						<li><a href="znalosti.html">Znalosti</a></li>
+						<li><a href="zkusenosti.html">Zkušenosti</a></li>
+						<li><a href="projekty.html" class="current-location">Projekty</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="./#kontakt">Kontakt</a></li>
+					</ul>
+					<!-- hamburger button - show when screnn is to small to fit regular navbar -->
+					<div id="hamburger-btn" />
+				</div>
+			</nav>
+
+			<!-- breadcrumbs navigation -->
+			<div class="breadcrumbs">
+				<div class="max-width">
+					<a href="./">Novák</a>
+					>
+					<a href="../projekty.html">Projekty</a>
+					> Dolování dat z webu
+				</div>
+			</div>
+
+			<!-- scroll up button -->
+			<div class="scroll-up-btn" />
+		</header>
+
+		<!-- content -->
+		<div class="content max-width">
+			<h1>Dolování dat z webu</h1>
+			<!-- sumary -->
+			<p>
+				Projekt se zabývá prací s daty. Tento projekt se skládá z několika programů. Nabízí
+				funkcionality na dolování dat, na převod dat do různých formátů nebo jejich
+				validaci. Používám různé xml technologie, ale také Javascript.
+			</p>
+
+			<!-- project screenshot -->
+			<img
+				src="images/projects/dolovani-dat.png"
+				alt="screenshot webového prostředí aplikace"
+			/>
+
+			<!-- features -->
+			<h2>Funkcionality</h2>
+			<!-- sumary -->
+			<p>
+				Program umí dolovat data z html stránek. Umí data převést do xml formátu. Dále
+				nabízí možnost převedení dat do pdf, html i ePub formátů. Projekt má i automatizované
+				řešení pomocí scriptů.
+			</p>
+			<!-- transformation to xml -->
+			<p>
+				První funkcionalitou je vytáhnutí dat a přetvoření jich do XML formátu. Na to slouží
+				jednoduchá Nodejs aplikace. Tato aplikace očekává na vstupu různý počet webových
+				stránek, které naparsuje a vhodně reprezentuje v xml.
+			</p>
+			<!-- transformation to other formats -->
+			<p>
+				Druhá důležitá funkcionalita je přetvoření XML dat do ostatních formátů. Výsledkem
+				jsou webové stránky, které nabízejí funkce jako například meníčka a podobné.
+				Výsledné pdf také obsahuje meníčka s interními linky podobně jako i ePub výstup.
+			</p>
+
+			<!-- implementation -->
+			<h2>Implementace</h2>
+			<!-- sumary -->
+			<p>
+				Využil jsem technologie Javascript (konkrétně Nodejs), XSLT, XSLFO. Pro validaci xml
+				používám DTD a RNG schémata. Dále vše propojuji několika bashovými scripty. Používám
+				také veřejné programy využívající Javu.
+			</p>
+			<!-- parsing html to xml -->
+			<p>
+				Nodejs využívám na transformaci webových stránek na XML formát. Používám k tomu
+				knihovnu HTMLParser, kterou si snadně nainstaluji pomocí npm. Program si hravě
+				poradí s HTML a jeho záludnostmi a speciálními znaky.
+			</p>
+			<!-- validation of xml -->
+			<p>
+				Na vygenerované xml dokumenty mám 2 validační schémata. První jednodušší je ve
+				formátu DTD. To druhé složitější, které nabízí větší možnosti validace je v RNG. Rng
+				soubor vygeneruji z RNC gramatiky.
+			</p>
+			<!-- transformation to other formats -->
+			<p>
+				Pro vytvoření HTML stránek používám Java program Saxon. Tento program na vstupu
+				dostane XML data a XSLT stylesheet a z nich vygeneruje HTML. Pro stylování těchto
+				HTML stránek používám externí CSS. Pro pdf využívám XSLFO stylování.
+			</p>
+			<!-- automation -->
+			<p>
+				Program obsahuje řadu bashovách scriptů, které mi usnadňují vývoj i samotné
+				používání všech programů. Každá funkcionalita má svůj vlastní script, který vykoná
+				potřebné příkazy. Projekt obsahuje i script, který spouští vše naráz.
+			</p>
+			<a class="last-link underlinep">zveřejněná implementace na mém GitHubu</a>
+		</div>
+
+		<!-- footer -->
+		<footer>
+			<ul>
+				<li><a href="./">Novák</a></li>
+				<li><a href="o-mne.html">O mně</a></li>
+				<li><a href="znalosti.html">Znalosti</a></li>
+				<li><a href="zkusenosti.html">Zkušenosti</a></li>
+				<li>
+					<a href="projekty.html" class="current-location current-active">Projekty</a>
+				</li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="./#kontakt">Kontakt</a></li>
+			</ul>
+		</footer>
+
+		<script src="scripts/script.js"></script>
+	</body>
+</html>

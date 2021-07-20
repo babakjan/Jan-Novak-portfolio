@@ -1,0 +1,146 @@
+/* print format stylesheet */
+
+@media print {
+	* {
+		background: transparent !important;
+		color: black;
+	}
+
+	a[href^="http"]::after {
+		content: " [" attr(href) "]";
+	}
+
+	.navbar,
+	footer,
+	.scroll-up-btn,
+	iframe,
+	.skill-icons,
+	img,
+	.button {
+		display: none !important;
+	}
+
+	@page {
+		margin: 2cm 2cm 2cm 2cm;
+	}
+
+	h1,
+	h2,
+	ul,
+	.content ul li .print-not-break {
+		page-break-after: avoid !important;
+	}
+
+	img {
+		page-break-before: auto;
+		page-break-after: auto;
+		page-break-inside: avoid !important;
+		margin: 2cm !important;
+	}
+
+	p {
+		/* single words or lines after page break */
+		orphans: 3;
+
+		/* single words or lines before page break */
+		widows: 3;
+	}
+
+	.content ul li .block {
+		display: block;
+	}
+
+	.content,
+	.breadcrumbs {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	/* home page */
+
+	section {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	.landing {
+		height: 5cm !important;
+		padding-top: 0 !important;
+		margin-top: 0 !important;
+	}
+
+	.landing .column-left {
+		height: 100% !important;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	.landing .column-right {
+		width: 0 !important;
+		height: 0 !important;
+	}
+
+	.about .column-right,
+	.experiences .content,
+	.experiences .content .column-left,
+	.experiences .column-left p {
+		width: 100% !important;
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+	}
+
+	.experiences {
+		padding-top: 0.5cm !important;
+	}
+
+	.experiences .content .column-right {
+		width: 0;
+	}
+
+	.blog h {
+		margin-top: 2rem !important;
+		padding-top: 2rem;
+	}
+
+	.projects-screen-shots {
+		margin-bottom: 2cm !important;
+		page-break-before: always !important;
+	}
+
+	.projects-screen-shots a {
+		border: 1px solid var(--primary-color);
+		box-shadow: 0 0 0 0 !important;
+		-webkit-box-shadow: 0 0 0 0 !important;
+	}
+
+	.blog .column-right,
+	.blog .column-right p,
+	.blog .column-right a {
+		width: 100% !important;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	.contact {
+		page-break-before: always !important;
+	}
+
+	/* about me */
+
+	#about-me-personality {
+		page-break-before: always !important;
+	}
+
+	/* projects */
+
+	#projects-springboot {
+		padding-left: 0 !important;
+	}
+
+	/* blog */
+
+	.post .column-right {
+		width: 100% !important;
+		margin-left: 0 !important;
+	}
+}

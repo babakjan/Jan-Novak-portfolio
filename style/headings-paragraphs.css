@@ -1,0 +1,39 @@
+/* headings ang paragrapsh stylesheet */
+
+.content {
+	height: 100%;
+}
+
+.content h1,
+.content h2 {
+	margin: 2rem 0 2rem 0;
+}
+
+.content h1 {
+	font-size: 3rem;
+}
+
+.content h2 {
+	font-size: 1.7rem;
+}
+
+.content p {
+	line-height: 1.7rem;
+	/* text-align: justify; */
+	margin-bottom: 2rem;
+	font-size: 1.2rem;
+}
+
+.content a {
+	color: var(--primary-color-darker);
+}
+
+@media screen and (max-width: 31.25rem) {
+	.content h1 {
+		font-size: 2rem;
+	}
+
+	.content h2 {
+		font-size: 1.5rem;
+	}
+}
