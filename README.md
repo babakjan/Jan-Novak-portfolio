@@ -1,6 +1,6 @@
 # Hierarchical web
 
-- This is **a portfolio of a fictive person!**
+- This is **a portfolio of a fictive person** (It is a semestral project for the course Basics of web and user interface.)
 - Used technologies are **HTML**, **CSS**, and **JavaScript**.
 - The main **purpose of this project** was to learn
   - how to make a hierarchical web
@@ -10,7 +10,7 @@
   - semantic HTML
   - CSS
 
-- **[Live project](https://bizwu.fit.cvut.cz/B202/babakjan-sem/index.html)**
+- **[Live project 👉](https://bizwu.fit.cvut.cz/B202/babakjan-sem/index.html)**
 
 ## Features
 
